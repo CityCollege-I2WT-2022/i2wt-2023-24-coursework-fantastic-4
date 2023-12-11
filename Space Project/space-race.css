@@ -1,0 +1,73 @@
+
+
+body,html{
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*h1 {
+    color: black;
+    font-family: VT323;
+    text-align: center;
+    font-size: 60px;
+}*/
+.banner-img{
+    
+            background-image: url("images/dark_galaxy.png");
+            background-size: cover; /* This property ensures the background image covers the whole element */
+            background-repeat: no-repeat; /* Prevents the background image from repeating */
+            background-position: center center; /* Centers the background image horizontally and vertically */
+            filter: blur(7px);
+            height: 120%;
+            width: 100%;
+            z-index: -1;
+            position: fixed;
+}
+.banner-text{
+    color: aliceblue;
+    font-family: VT323;
+    font-size: 31px;
+    position: absolute;
+    left: 38%;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+dl{
+   position: absolute;
+    top: 28%;
+    left: 18%;
+    font-size: 22px;
+    color: aliceblue;
+    font-family: VT323;
+        
+    
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 350px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: aliceblue;
+    font-family: VT323;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+p {
+    font-size: 21px;
+}
