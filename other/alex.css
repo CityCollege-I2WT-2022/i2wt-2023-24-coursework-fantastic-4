@@ -1,0 +1,96 @@
+/*Made by Alexandros Drakoulis*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: VT323;
+    text-decoration: none;
+    
+    
+}
+
+body{
+background-color: black;
+}
+
+
+@keyframes slideInFromLeft {
+0% {
+transform: translateX(-100%);
+}
+100% {
+transform: translateX(0);
+}
+}
+
+
+.backround{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover; /* This property ensures the background image covers the whole element */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-image: url(/images/alex.png); 
+    z-index: -2;
+    background-position: center center; /* Centers the background image horizontally and vertically */
+    filter: blur(3px);
+}
+
+.content{
+    animation: 0.78s ease-out 0s 1 slideInFromLeft;
+    font-size: 27px;
+    left: 12%;
+    top: 30% ;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 1em;
+    
+}
+
+.header{
+    font-size: 29px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 19px 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    -webkit-backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+
+}
+
+
+
+.navbar a{
+margin-right:100px;
+}
+
+
+a:hover{
+    color: #468499;
+    transition: 0.28s ease-in-out;
+}
+
+.logo
+{
+    font-size: 45px;
+    left: 5rem;
+    color: white;
+    position: absolute;
+}
+

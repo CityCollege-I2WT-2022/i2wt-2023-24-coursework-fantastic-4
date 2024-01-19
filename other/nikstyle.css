@@ -1,0 +1,55 @@
+body {
+    background-image: url("/images/spacebgnt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.h1text {
+    font-family: VT323;
+    color: rgba(90, 3, 190, 0.644);
+    font-size: 40px;
+    text-align: center;
+}
+.h2text{
+    font-family: VT323;
+    color: rgba(90, 3, 190, 0.644);
+    font-size: 25px;
+    text-align: center;
+}
+.text {
+    font-family: cursive;
+    color: rgb(170, 171, 172);
+    font-size: 23px;
+}
+div {
+    width: 700px;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 32, 32);
+}
+
+li {
+    float: left; 
+}
+
+li a {
+    display: block;
+    color: rgb(1, 102, 133);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #291928;
+}
+.images {
+    border: 6px solid #e3c0aa;
+    border-style: ridge;
+}
