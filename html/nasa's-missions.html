@@ -4,75 +4,89 @@
         href="https://fonts.googleapis.com/css?family=VT323"
         rel="stylesheet" />
     <link href="index.html" />
+    <head>
+        <style>
+            .bar {
+                font-weight: bold;
+                float: left;
+                display: block;
+                color: #088d9d;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .navbar a:hover {
+                background-color: #088d9d;
+                color: black;
+            }
+            .center {
+                text-align: center;
+                color: aliceblue;
+                font-size: 60px;
+                font-family: VT323;
+                position: relative;
+                z-index: 0px;
+                bottom: 20px;
+                right: 10px;
+                top: 40px;
+                margin-left: 27%;
+                margin-right: 49%;
+                margin-top: 2%;
+                margin-bottom: 5%;
+            }
 
-    <style>
-        .bar {
-            font-weight: bold;
-            float: left;
-            display: block;
-            color: #088d9d;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .navbar a:hover {
-            background-color: #088d9d;
-            color: black;
-        }
-        .center {
-            text-align: center;
-            color: aliceblue;
-            font-size: 60px;
-            font-family: VT323;
-            position: relative;
-            z-index: 0px;
-            bottom: 20px;
-            right: 10px;
-            top: 40px;
-            margin-left: 27%;
-            margin-right: 49%;
-            margin-top: 2%;
-            margin-bottom: 5%;
-        }
+            body {
+                background-image: url(/images/purple_space_two.jfif);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
 
-        body {
-            background-image: url(images/purple_space_two.jfif);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+            .text {
+                color: aliceblue;
+                font-family: VT323;
+                font-size: 35px;
+            }
 
-        .text {
-            color: aliceblue;
-            font-family: VT323;
-            font-size: 35px;
-        }
+            .info {
+                color: aliceblue;
+                font-size: 18px;
+                font-family: monospace;
+            }
 
-        .info {
-            color: aliceblue;
-            font-size: 18px;
-            font-family: monospace;
-        }
-
-        img {
-            border: 6px solid #825495;
-            border-style: outset;
-        }
-        .namecolor {
-            color: mediumpurple;
-        }
-    </style>
-
+            img {
+                border: 6px solid #825495;
+                border-style: outset;
+            }
+            .namecolor {
+                color: mediumpurple;
+            }
+                 .parallax {
+                     background-image:url
+                    min-height: 800px;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                     background-size: cover;
+            }
+            .create{
+                font-family: monospace;
+                color: aliceblue;
+                font-size: 17px;
+            }
+        </style>
+    </head>
     <body>
+        <div class="parallax"></div>
         <div class="navbar">
-            <a href="#index.html" class="bar"> Home</a>
-            <a href="#nasa's-missions.html" class="bar">Nasa's Missions</a>
-            <a href="#Telescopes.html" class="bar">Telescopes</a>
-            <a href="#entertainment.html" class="bar">Entertainment</a>
-            <a href="#otherspaceagencies.html" class="bar"
+            <a href="/index.html" class="bar"> Home</a>
+            <a href="/nasa's-missions.html" class="bar">Nasa's Missions</a>
+            <a href="/Telescopes.html" class="bar">Telescopes</a>
+            <a href="/entertainment.html" class="bar">Entertainment</a>
+            <a href="/otherspaceagencies.html" class="bar"
                 >Other Space Agencies</a
             >
-            <a href="#references.html" class="bar">References</a>
-            <a href="#references.html" class="bar">The Team</a>
+            <a href="/theteam.html" class="bar">The Team</a>
+            <a href="/references.html" class="bar">References</a>
         </div>
         <h1 class="center">Nasas Mission's</h1>
 
@@ -95,7 +109,7 @@
         </p>
         <p class="info">The spaceship Artemis in progress:</p>
 
-        <img src="images/ship_two.jfif" width="260" alt="Artemis in progress" />
+        <img src="/images/ship_two.jfif" width="260" alt="Artemis in progress" />
 
         <h2 class="text">The Juno project:</h2>
         <p class="info">
@@ -110,7 +124,7 @@
         <p class="info">The Juno Spacecraft:</p>
 
         <img
-            src="images/juno_o.png"
+            src="/images/juno_o.png"
             width="270"
             k
             height="230"
@@ -131,12 +145,21 @@
 
         <p class="info">The Apollo 11 landing on the moon:</p>
         <img
-            src="images/apollo_11.png"
+            src="/images/apollo_11.png"
             width="270"
             k
             alt="Astronat on the moon, Apollo 11 mission" />
+        <br>
+        <br>
+        <br>
+        <p class="create">Created by Maria Kapetaniou</p>
     </body>
     <script>
-    
+        window.addEventListener("scroll", function () {
+            const parallax = document.querySelector(".parallax");
+            let scrollPosition = window.pageYOffset;
+
+            parallax.style.backgroundPositionY = scrollPosition * 2.5 + "px";
+        });
     </script>
 </html>
