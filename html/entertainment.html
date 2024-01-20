@@ -25,7 +25,7 @@
                 color: black;
             }
         body {
-            background-image: url(images/dark_galaxy.png);
+            background-image: url(/images/dark_galaxy.png);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -88,16 +88,30 @@
             color: aliceblue;
             font-size: 30px;
         }
+        .parallax {
+     background-image:url
+    min-height: 800px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        .create{
+            font-family: monospace;
+                color: aliceblue;
+                font-size: 17px;
+        }
+
     </style>
-    <body>
+    <body><div class="parallax"></div>
         <div class="navbar"> 
-            <a href="#index.html" class="bar"> Home</a>
-            <a href="#nasa's-missions.html" class="bar">Nasa's Missions</a> 
-            <a href="#Telescopes.html" class="bar">Telescopes</a> 
-            <a href="#entertainment.html" class="bar">Entertainment</a>
-            <a href="#otherspaceagencies.html" class="bar">Other Space Agencies</a> 
-            <a href="#references.html" class="bar">References</a> 
-            <a href="#references.html" class="bar">The Team</a>
+            <a href="/index.html" class="bar"> Home</a>
+            <a href="/nasa's-missions.html" class="bar">Nasa's Missions</a> 
+            <a href="/images/Telescopes.html" class="bar">Telescopes</a> 
+            <a href="/entertainment.html" class="bar">Entertainment</a>
+            <a href="/otherspaceagencies.html" class="bar">Other Space Agencies</a> 
+            <a href="/theteam.html" class="bar">The Team</a>
+            <a href="/references.html" class="bar">References</a>
         </div>
         <h1 class="heading">Entertainment</h1>
         <h2 class="h2">Movies:</h2>
@@ -130,7 +144,7 @@
         </p>
         <img
             class="img"
-            src="images/guardians_of_the_galaxymovie.png"
+            src="/images/guardians_of_the_galaxymovie.png"
             alt="Guardians of the galaxy movie"
             width="330" />
         <h2 id="movie2"><strong>Hidden Figures:</strong></h2>
@@ -159,7 +173,7 @@
         </p>
         <img
             class="img"
-            src="images/hidden_figuresmovie.png"
+            src="/images/hidden_figuresmovie.png"
             alt="hidden figures movie"
             width="330" />
         <h2 id="movie3"><strong>Interstellar:</strong></h2>
@@ -186,7 +200,7 @@
         </p>
         <img
             class="img"
-            src="images/interstellar.png"
+            src="/images/interstellar.png"
             alt="Interstellar movie"
             width="330" />
         <h2 id="movie4"><strong>Gravity:</strong></h2>
@@ -215,11 +229,18 @@
         </p>
         <img
             class="img"
-            src="images/gravitymovie.png"
+            src="/images/gravitymovie.png"
             alt="Gravity movie"
             width="330" />
+        <p class="create">Created by Maria Kapetaniou</p>
     </body>
     <script>
-    
+ window.addEventListener('scroll', function() {
+    const parallax = document.querySelector('.parallax');
+    let scrollPosition = window.pageYOffset;
+
+    parallax.style.backgroundPositionY = scrollPosition * 2.5 + 'px';
+});
     </script>
 </html>
+
