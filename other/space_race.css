@@ -15,7 +15,7 @@ font-size: 60px;
 }*/
 .banner-img{
 
-background-image: url("/images/dark_galaxy.png");
+background-image: url("../images/dark_galaxy.png");
 background-size: cover; /* This property ensures the background image covers the whole element */
 background-repeat: no-repeat; /* Prevents the background image from repeating */
 background-position: center center; /* Centers the background image horizontally and vertically */
